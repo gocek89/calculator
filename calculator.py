@@ -44,3 +44,19 @@ def division(numb_1, numb_2):
     logging.info(f"dziele {numb_1} i {numb_2}")
     wynik = numb_1 / numb_2
     print(f"Wynik to : {wynik}")
+
+
+choice = int(input(
+    "Podaj działanie, posługując się odpowiednią liczbą: 1 Dodawanie, 2 Odejmowanie, 3 Mnożenie, 4 Dzielenie:\n"))
+
+numb_1 = int(input("Podaj liczbę 1: "))
+numb_2 = int(input("Podaj liczbę 2: "))
+
+if choice == 1:
+    wynik = adding(numb_1, numb_2)
+elif choice == 2:
+    wynik = subtraction(numb_1, numb_2)
+elif choice == 3:
+    wynik = multiplication(numb_1, numb_2)
+elif choice == 4:
+    wynik = division(numb_1, numb_2)
